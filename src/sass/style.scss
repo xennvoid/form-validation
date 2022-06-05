@@ -1,0 +1,73 @@
+@use "reset";
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+$light:#E4DBBF;
+$orange:#DC5B21;
+$main-bg:#70AB8F;
+$brown:#383127;
+$main-font: 'Poppins', sans-serif;
+
+html{
+    font-size: 16px;
+}
+
+body{
+    font-family: $main-font;
+    background: url('../images/main-bg.jpg');
+    color: #fff;
+}
+
+.form__container{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form{
+
+    &__btn {
+        background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+        border-radius: 0.5rem;
+        border-style: none;
+        color: #FFFFFF;
+        cursor: pointer;
+        font-family: $main-font;
+        font-size: 16px;
+        font-weight: 500;
+        text-align: center;
+        text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+        transition: all .5s;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+
+        &:hover {
+            box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+            transition-duration: .1s;
+        }
+
+        @media (min-width: 768px) {
+            & {
+              padding: 0 2.6rem;
+            }
+          }
+      }
+    
+    & input{
+        padding: 5px;
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 1rem;
+        font-family: $main-font;
+        margin-bottom: 1rem;
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+
+        &::placeholder{
+            font-size: 1rem;
+        }
+    }
+
+}

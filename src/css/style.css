@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #70AB8F;
+  color: #fff;
+}
+
+.form__container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form__btn {
+  background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+  border-radius: 0.5rem;
+  border-style: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+}
+
+.form__btn:hover {
+  -webkit-box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+          box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+  -webkit-transition-duration: .1s;
+          transition-duration: .1s;
+}
+
+@media (min-width: 768px) {
+  .form__btn {
+    padding: 0 2.6rem;
+  }
+}
+
+.form input {
+  padding: 5px;
+  display: block;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 1rem;
+}
+
+.form input:last-child {
+  margin-bottom: 0;
+}
+
+.form input::-webkit-input-placeholder {
+  font-size: 1rem;
+}
+
+.form input:-ms-input-placeholder {
+  font-size: 1rem;
+}
+
+.form input::-ms-input-placeholder {
+  font-size: 1rem;
+}
+
+.form input::placeholder {
+  font-size: 1rem;
+}
